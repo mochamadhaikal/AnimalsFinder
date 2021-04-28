@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/tailwind.css" />
+    <script src="https://kit.fontawesome.com/e8efd9bbae.js" crossorigin="anonymous"></script>
+
+    <title>Animals Finder</title>
+  </head>
+  <body class="font-mono">
+    <!-- Header -->
+
+    <div class="bg-green-600 p-4 flex justify-between items-center">
+      <!-- Left side-->
+
+      <div class="items-center">
+        <img src="./img/logo.svg" class="mr-2 w-10 inline-block" />
+        <a
+          href=""
+          class="inlne-block p-3 text-green-200 hover:text-green-100 text-xl"
+          >Animals Finder</a
+        >
+        <a
+          href="#home"
+          class="inlne-block p-2 text-green-200 hover:text-green-100"
+          >Home</a
+        >
+        <a
+          href="#about"
+          class="inlne-block p-2 text-green-200 hover:text-green-100"
+          >About me</a
+        >
+      </div>
+
+      <!-- Right side -->
+
+      <div class="hidden: md:block">
+        <a href="http://" class="inlne-block p-2 text-green-200">Login</a>
+      </div>
+    </div>
+
+    <div
+      class="md:flex justify-between py-20 px-10 bg-yellow-300 text-indigo-100"
+    >
+      <!-- Left Side -->
+
+      <div class="md:w-1/2 mb-10 md:mb-0" id="home">
+        <h2 class="text-4xl md:text-2xl lg:text-4xl text-white mb-6">
+          Welcome to <span class="bg-gradient-to-r from-green-600 to-yellow-300 rounded shadow-2x1">Animals Finder!</span>
+        </h2>
+        <p class="mb-6 text-lg text-white">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+          Quaerat officiis hic deserunt commodi, debitis iure? Fuga <br>
+          perspiciatis quam praesentium dolorem atque officiis fugit <br>
+          pariatur distinctio illum ratione sed, quidem labore! <br>
+        </p>
+        <form action="">
+          <input
+            type="text"
+            name="name"
+            placeholder="..."
+            class="px-2 py-2 outline-none focus:bg-indigo-200"
+          />
+          <button
+            class="bg-green-600 inlne-block py-2 px-4 text-green-200 hover:bg-green-300 hover:text-green-800 transition ease-in-duration-150"
+          >
+            Search
+          </button>
+        </form>
+      </div>
+      <!-- Right Side -->
+
+      <div class="md:w-1/2 mb-10 md:mb-0">
+        <img src="./img/header.jpg" class="w-full rounded shadow-2xl" />
+      </div>
+    </div>
+    <!-- End Header -->
+
+    <!-- Popular Search -->
+    <div class="flex py-16 bg-green-600 text-indigo-200 text-center">
+      <div class="container mx-auto">
+        <h2 class="text-2xl mb-8 text-green-200">Popular Search</h2>
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
+          <div class="bg-green-900 rounded-lg">
+            <img
+              src="./img/feature-cat.jpg"
+              class="w-full rounded-lg border-green-700 border-solid border-2 mb-3"
+            />
+            <button
+            class="rounded bg-green-800 inlne-block py-2 px-4 text-green-200 hover:bg-green-300 hover:text-green-800 transition ease-in-duration-150"
+          >
+            See Details
+          </button>
+          </div>
+          <div class="bg-green-900 rounded-lg">
+            <img
+              src="./img/feature-cat2.jpg"
+              class="w-full rounded-lg border-green-700 border-solid border-2 mb-3"
+            />
+            <button
+            class="rounded bg-green-800 inlne-block py-2 px-4 text-green-200 hover:bg-green-300 hover:text-green-800 transition ease-in-duration-150"
+          >
+            See Details
+          </button>
+          </div>
+          <div class="bg-green-900 rounded-lg">
+            <img
+              src="./img/feature-cat3.jpg"
+              class="w-full rounded-lg border-green-700 border-solid border-2 mb-3"
+            />
+            <button
+            class="rounded bg-green-800 inlne-block py-2 px-4 text-green-200 hover:bg-green-300 hover:text-green-800 transition ease-in-duration-150"
+          >
+            See Details
+          </button>
+          </div>
+          <div class="bg-green-900 rounded-lg">
+            <img
+              src="./img/feature-cat4.jpg"
+              class="w-full rounded-lg border-green-700 border-solid border-2 mb-3"
+            />
+            <button
+            class="rounded bg-green-800 inlne-block py-2 px-4 text-green-200 hover:bg-green-300 hover:text-green-800 transition ease-in-duration-150"
+          >
+            See Details
+          </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Gallery -->
+
+    <!-- Footer -->
+    <footer class="py-10 bg-indigo-900 text-indigo-400">
+      <h1 class="text-white text-center text-2xl font-bold" id="about">About Me</h1>
+      <div class="container mx-auto flex justify-between items-center">
+        <div class="w-full max-w-xs">
+          <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+            <div class="mb-4">
+              <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+                Contact
+              </label>
+              <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Username">
+            </div>
+            <div class="mb-6">
+              <textarea name="" id="" cols="30" rows="10" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="message..."></textarea>
+              <p class="text-red-500 text-xs italic">Please choose a message.</p>
+            </div>
+              <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+                Submit
+              </button>
+          </form>
+        </div>
+        <img src="./img/logo.svg" class="w-56 inline-block pb-3"/>
+        <div>
+          <div class="text-gray-300 text-xl mb-2">
+            <h2><i class="fa fa-facebook"></i> Animals Finder</h2>
+            <h2><i class="fa fa-instagram"></i> @animals_finder</h2>
+            <h2><i class="fa fa-twitter"></i> @animals.finder</h2>
+          </div>
+          <p class="text-center text-gray-400 text-base flex justify-end">
+            &copy;2021 Animals Finder. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
